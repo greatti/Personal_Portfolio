@@ -213,7 +213,7 @@ background: var(--main-black);
 .contato-titulo > p{ 
     font-style: italic;
     font-family: 'Cutive Mono', monospace;
-  color: var(--main-blue);
+    color: var(--main-blue);
     text-decoration: underline 1px;
     margin: 0px;
     padding: 0px;
@@ -221,9 +221,24 @@ background: var(--main-black);
 
 .contato-link { 
     display: flex;
-justify-content: center;
-width: 100%;
-max-width: 980px;
-margin-top: 4rem;
-flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.links { 
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px var(--main-blue-2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.contato-link a{ 
+    text-decoration: none;
 }
