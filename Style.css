@@ -1,0 +1,78 @@
+:root { 
+	--pearl: rgb(238,235,217);
+	--main-blue: rgb(102, 102, 204);
+	--main-black: rgb(5, 10, 20);
+}
+
+@media (max-width: 61.25em)
+html {
+    font-size: 58%;
+}
+
+@media (max-width: 75em)
+html {
+    font-size: 60%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html {
+    display: block;
+}
+
+body {
+    display: block;
+    margin: 8px;
+		font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--pearl);
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-blue);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 50%);
+    z-index: 10;
+}
+
+.nav-blocks { 
+	display: flex; 
+	margin: 1px 2rem 1px;
+}
+
+ul {
+	list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-center;
+}
+
+.nav-blocks a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: underline dotted ;
+    color: var(--pearl);
+}
