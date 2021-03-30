@@ -96,7 +96,10 @@ a {
 
 .Inicio p{ 
 	color: var(--main-blue);
-	text-decoration: underline dotted ;
+	text-decoration: underline 1px;
 	margin: 0px;
 	padding: 0px;
+    font-style: italic;
+	font-family: 'Cutive Mono', monospace;
+	font-size: 3rem;
 }
