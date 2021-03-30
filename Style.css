@@ -242,3 +242,16 @@ background: var(--main-black);
 .contato-link a{ 
     text-decoration: none;
 }
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-black);
+    border-top: 4px solid var(--main-blue);
+}
+
+#foot p{ 
+	font-size: 12px;
+}
