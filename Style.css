@@ -2,6 +2,7 @@
 	--pearl: rgb(238,235,217);
 	--main-blue: rgb(102, 102, 204);
 	--main-black: rgb(5, 10, 20);
+    --main-blue-2: rgba(102, 102, 204,0.95);
 }
 
 @media (max-width: 61.25em)
@@ -27,7 +28,7 @@ html {
 body {
     display: block;
     margin: 8px;
-		font-family: 'Bungee', cursive;
+	font-family: 'Bungee', cursive;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.4;
@@ -41,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-blue);
+    background: var(--main-blue-2);
     box-shadow: 0 2px 0 rgb(0 0 0 / 50%);
     z-index: 10;
 }
@@ -63,7 +64,6 @@ ul {
 
 li {
     display: list-item;
-    text-align: -webkit-center;
 }
 
 .nav-blocks a {
@@ -75,4 +75,28 @@ li {
 a {
     text-decoration: underline dotted ;
     color: var(--pearl);
+}
+
+.Inicio { 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
+	height: 100vh;
+	background-color: var(--main-black);
+}
+
+.Titulo1 { 
+	font-size: 50px;
+	padding: 0px;
+	margin: 0px;
+	text-shadow: 2px 2px var(--main-blue);
+}
+
+.Inicio p{ 
+	color: var(--main-blue);
+	text-decoration: underline dotted ;
+	margin: 0px;
+	padding: 0px;
 }
