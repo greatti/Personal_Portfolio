@@ -1,3 +1,12 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root { 
 	--pearl: rgb(238,235,217);
 	--main-blue: rgb(102, 102, 204);
@@ -77,7 +86,7 @@ a {
     color: var(--pearl);
 }
 
-.Inicio { 
+.welcome-section { 
 	display: flex; 
 	flex-direction: column; 
 	justify-content: center;
@@ -94,7 +103,7 @@ a {
 	text-shadow: 2px 2px var(--main-blue);
 }
 
-.Inicio p{ 
+.welcome-section p{ 
 	color: var(--main-blue);
 	text-decoration: underline 1px;
 	margin: 0px;
@@ -102,4 +111,79 @@ a {
     font-style: italic;
 	font-family: 'Cutive Mono', monospace;
 	font-size: 3rem;
+}
+
+#projects { 
+	text-align : center; 
+	padding: 10rem 2rem;
+	background: var(--main-blue);
+}
+
+.Titulo2 {
+	max-width: 640px;
+	margin: 0 auto 6rem auto;
+	border-bottom: 0.2rem solid var(--main-black);
+	color: var(--main-black);
+	font-size: 35px;
+	text-shadow: 2px 2px var(--pearl);
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    margin-bottom: 6rem;
+		padding: 0px;
+}
+
+.project-tile a{ 
+	text-decoration: none;
+  color: var(--pearl);
+	font-size: 18px;
+}
+
+img {
+    display: block;
+    width: 100%;
+		background: var(--main-black);
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 80%);
+    border-radius: 2px;
+}
+
+.project-title {
+    font-size: 20px;
+    padding: 5px 0.5rem;
+}
+
+.project-tile p {
+    display: block;
+		margin-top: 0px;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+		background-color: #1b1c20;
+		box-shadow: 1px 1px 2px rgb(0 0 0 / 80%);
+    border-radius: 2px;
+		transition: height 4s;
+}
+
+.desaparece { 
+		color: var(--main-blue);
+    transition: color 0.3s ease-out;
+}
+
+.btn-rep > i{ 
+		margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+} 
+
+.btn-repo {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+		text-decoration: none;
+    -webkit-transition: background-color 1s ease-out;
 }
