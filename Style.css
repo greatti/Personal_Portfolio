@@ -187,3 +187,8 @@ img {
 		text-decoration: none;
     -webkit-transition: background-color 1s ease-out;
 }
+
+.btn-repo:hover {
+    background-color: #1b1c20;
+    cursor: pointer;
+  }
